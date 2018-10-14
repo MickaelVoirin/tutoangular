@@ -1,0 +1,20 @@
+<div *ngIf="shero"> 
+    <h2>Détails du héro : {{ shero.name  | uppercase}}</h2>
+    <p *ngIf="ServiceMessage.messagesTwo" 
+        style="color:red">"{{ServiceMessage.messagesTwo}}"</p>
+    <p><span>id : </span>{{ shero.id }}</p>
+    <p><span>nom : </span>{{ shero.name }}</p>
+    <p><span>age : </span>{{ shero.old }}</p>
+  
+    <p>
+      <label>Editer le nom :<br>
+        <input [(ngModel)]="shero.name" placeholder="Son nom">
+      </label>
+    </p>
+    <p>
+      <label>Editer l'age :<br>
+        <input [(ngModel)]="shero.old" placeholder="Son age">
+      </label>
+    </p>
+    <button (click)="goBack()">go back</button>
+</div>

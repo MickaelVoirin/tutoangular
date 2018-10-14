@@ -1,0 +1,22 @@
+
+h2 {
+    color:red;
+}
+li {
+    width:25%;
+    margin:0 auto;
+    text-align:left;
+}
+li{
+    cursor:pointer;
+    list-style-type: none;
+}
+
+li.selected{
+    background-color: #369;
+    color:white;
+}
+li:hover, li.selected:hover{
+    background-color: #607D8B;
+    color:white;
+}
